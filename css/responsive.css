@@ -1,0 +1,378 @@
+/* ===================================================
+   MOHAMED SAYED — FLUTTER DEVELOPER PORTFOLIO (2026)
+   Style Sheet: Responsive Layouts & Breakpoints
+   Breakpoints: 1200px, 992px, 768px, 576px
+   =================================================== */
+
+/* ===================================================
+   LARGE SCREENS & LAPTOPS (<= 1200px)
+   =================================================== */
+@media (max-width: 1200px) {
+    :root {
+        --container-max: 980px;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .profile-container {
+        width: 380px;
+        height: 380px;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ===================================================
+   TABLETS & MEDIUM SCREENS (<= 992px)
+   =================================================== */
+@media (max-width: 992px) {
+    :root {
+        --container-max: 720px;
+        --header-height: 72px;
+    }
+
+    .section {
+        padding: 85px 0;
+    }
+
+    /* Header & Mobile Nav Transition */
+    .menu-toggle {
+        display: flex;
+        z-index: 1002;
+    }
+
+    .site-nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 320px;
+        max-width: 85vw;
+        height: 100vh;
+        background: rgba(8, 8, 8, 0.98);
+        backdrop-filter: blur(24px);
+        -webkit-backdrop-filter: blur(24px);
+        border-left: 1px solid rgba(255, 0, 0, 0.3);
+        padding: 100px 30px 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 24px;
+        box-shadow: -15px 0 40px rgba(0, 0, 0, 0.9);
+        transform: translateX(100%);
+        transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        z-index: 1001;
+        overflow-y: auto;
+    }
+
+    .site-nav.is-open {
+        transform: translateX(0);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .nav-link {
+        font-size: 1.15rem;
+        padding: 12px 16px;
+        width: 100%;
+        border-radius: var(--radius-md);
+    }
+
+    .nav-link.active::after {
+        left: 0;
+        transform: none;
+        width: 4px;
+        height: 60%;
+        top: 20%;
+        bottom: auto;
+    }
+
+    .header-actions .btn {
+        display: none;
+    }
+
+    .nav-cta-mobile {
+        display: inline-flex !important;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* Mobile Nav Overlay Backdrop */
+    .nav-backdrop {
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.7);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+        z-index: 1000;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .nav-backdrop.is-active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Hero Section */
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+        text-align: center;
+    }
+
+    .hero-content {
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-visual {
+        order: 1;
+    }
+
+    .hero-actions {
+        justify-content: center;
+    }
+
+    .hero-social {
+        justify-content: center;
+    }
+
+    .hero-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* About Section */
+    .about-grid {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        text-align: center;
+    }
+
+    .about-visual {
+        margin: 0 auto;
+    }
+
+    .about-content {
+        align-items: center;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact Section */
+    .contact-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-group.full-width {
+        grid-column: 1;
+    }
+}
+
+/* ===================================================
+   MOBILE DEVICES (<= 768px)
+   =================================================== */
+@media (max-width: 768px) {
+    :root {
+        --container-max: 100%;
+    }
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .profile-container {
+        width: 320px;
+        height: 320px;
+    }
+
+    .floating-badge {
+        padding: 8px 12px;
+    }
+
+    .floating-badge-1 {
+        top: 0;
+        left: -10px;
+    }
+
+    .floating-badge-2 {
+        bottom: 10px;
+        right: -10px;
+    }
+
+    .floating-badge-3 {
+        display: none;
+    }
+
+    .about-img-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* Experience Timeline Adapts to Left Line */
+    .timeline-container::before {
+        left: 20px;
+        transform: none;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 55px !important;
+        padding-right: 0 !important;
+        margin-bottom: 36px;
+    }
+
+    .timeline-dot {
+        left: 12px !important;
+        right: auto !important;
+    }
+
+    .timeline-card {
+        padding: 22px 20px;
+    }
+
+    .timeline-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Services Grid */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Testimonial Slide */
+    .testimonial-slide {
+        padding: 35px 24px;
+    }
+
+    .testimonial-quote {
+        font-size: 1.05rem;
+    }
+
+    /* Footer */
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+    }
+}
+
+/* ===================================================
+   SMALL PHONES (<= 576px)
+   =================================================== */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.3rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn {
+        width: 100%;
+    }
+
+    .profile-container {
+        width: 270px;
+        height: 270px;
+    }
+
+    .floating-badge {
+        display: none;
+    }
+
+    .about-img-container {
+        width: 260px;
+        height: 260px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-actions {
+        flex-direction: column;
+    }
+
+    .project-actions .btn {
+        width: 100%;
+    }
+
+    .inquiry-form-card {
+        padding: 24px 18px;
+    }
+
+    .form-submit-row .btn {
+        width: 100%;
+    }
+
+    .slider-nav {
+        gap: 12px;
+    }
+}

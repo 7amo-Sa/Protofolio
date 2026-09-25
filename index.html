@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Primary SEO Meta Tags -->
+    <title>Mohamed Sayed | Flutter Developer</title>
+    <meta name="title" content="Mohamed Sayed | Flutter Developer">
+    <meta name="description" content="Mohamed Sayed - Flutter Developer building modern and responsive mobile applications with clean UI and scalable solutions.">
+    <meta name="keywords" content="Mohamed Sayed , Flutter Developer, Mobile App Developer, Dart, BLoC, Mobile UI/UX, Cross-Platform Apps, iOS, Android">
+    <meta name="author" content="Mohamed Sayed">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mohamed-sayed-flutter.dev/">
+    <meta property="og:title" content="Mohamed Sayed | Flutter Developer">
+    <meta property="og:description" content="Flutter Developer focused on building modern, responsive, and high-performance mobile applications.">
+    <meta property="og:image" content="assets/images/profile.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Mohamed Sayed | Flutter Developer">
+    <meta property="twitter:description" content="Flutter Developer focused on building modern, responsive, and high-performance mobile applications.">
+    <meta property="twitter:image" content="assets/images/profile.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Core Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+    <!-- Background Parallax Ambient Glow Circles -->
+    <div class="parallax-bg-container" aria-hidden="true">
+        <div class="parallax-circle parallax-circle-1"></div>
+        <div class="parallax-circle parallax-circle-2"></div>
+        <div class="parallax-circle parallax-circle-3"></div>
+        <div class="parallax-circle parallax-circle-4"></div>
+    </div>
+
+    <!-- Mobile Nav Backdrop Overlay -->
+    <div id="nav-backdrop" class="nav-backdrop" aria-hidden="true"></div>
+
+    <!-- ===============================================
+         HEADER & NAVIGATION
+         =============================================== -->
+    <header class="site-header" id="site-header">
+        <div class="container header-container">
+            <!-- Brand / Logo -->
+            <a href="#home" class="site-logo" aria-label="Mohamed Sayed Home">
+                <span class="logo-badge"><span>M</span>S</span>
+                <div class="logo-text">
+                    <span class="logo-name">Mohamed</span>
+                    <span class="logo-role">FLUTTER DEV</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="site-nav" id="site-nav" aria-label="Main Navigation">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <a href="#contact" class="btn btn-primary btn-sm nav-cta-mobile" style="display: none;">
+                    <i class="fa-solid fa-comments"></i> Let's Talk
+                </a>
+            </nav>
+
+            <!-- Header Action Button & Mobile Toggle -->
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary btn-sm">
+                    <i class="fa-solid fa-comments"></i> Let's Talk
+                </a>
+                <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- ===============================================
+             5. HOME / HERO SECTION
+             =============================================== -->
+        <section class="hero-section" id="home" aria-label="Hero Introduction">
+            <div class="container hero-grid">
+                <!-- Left Column: Content -->
+                <div class="hero-content hero-entrance-fade">
+                    <div class="hero-badge">
+                        <span class="pulse-dot" aria-hidden="true"></span>
+                        <span>Available for Freelance &amp; 2026 Projects</span>
+                    </div>
+
+                    <p class="hero-greeting" id="hero-greeting">Hello, I'm</p>
+
+                    <h1 class="hero-title" id="hero-title">
+                        Mohamed
+                        <span>Sayed</span>
+                    </h1>
+
+                    <div class="hero-typing-wrapper">
+                        <span class="typing-prefix" aria-hidden="true">&gt;</span>
+                        <span id="typing-text" class="typing-text">Flutter Developer</span>
+                        <span class="typing-cursor" aria-hidden="true"></span>
+                    </div>
+
+                    <p class="hero-description" id="hero-description">
+                        Flutter Developer focused on building modern, responsive, and high-performance mobile applications with clean UI and scalable solutions.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <i class="fa-solid fa-paper-plane"></i> Hire Me
+                        </a>
+                        <a href="#projects" class="btn btn-outline">
+                            <i class="fa-solid fa-layer-group"></i> View Projects
+                        </a>
+                    </div>
+
+                    <div class="hero-social">
+                        <span class="social-label">Connect:</span>
+                        <div class="social-links" id="hero-social-links">
+                            <!-- Injected dynamically from js/data.js -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Visual Portrait & Rings -->
+                <div class="hero-visual hero-entrance-slide">
+                    <div class="profile-container">
+                        <div class="profile-ring-outer" aria-hidden="true"></div>
+                        <div class="profile-ring-glow" aria-hidden="true"></div>
+                        <div class="profile-ring-thin" aria-hidden="true"></div>
+
+                        <div class="profile-img-wrap">
+                            <img id="profile-img" src="assets/images/profile.jpg" alt="Mohamed Sayed — Flutter Developer">
+                        </div>
+
+                        <!-- Floating Badges -->
+                        <div class="floating-badge floating-badge-1" aria-hidden="true">
+                            <div class="badge-icon"><i class="fa-brands fa-flutter"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">Flutter Specialist</span>
+                                <span class="badge-sub">Cross-Platform</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge floating-badge-2" aria-hidden="true">
+                            <div class="badge-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">60 FPS Smooth</span>
+                                <span class="badge-sub">High Performance</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge floating-badge-3" aria-hidden="true">
+                            <div class="badge-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                            <div class="badge-info">
+                                <span class="badge-title">2026 Ready</span>
+                                <span class="badge-sub">Modern Tech Stack</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             6. ABOUT ME SECTION
+             =============================================== -->
+        <section class="section section-alt" id="about" aria-label="About Me">
+            <div class="container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-user"></i> Biography</span>
+                    <h2 class="section-title">About Me</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Left: Large Circular Image -->
+                    <div class="about-visual reveal-on-scroll reveal-left">
+                        <div class="about-img-container">
+                            <div class="about-halo" aria-hidden="true"></div>
+                            <div class="about-glow" aria-hidden="true"></div>
+                            <div class="about-img-wrap">
+                                <img id="about-img" src="assets/images/about.jpg" alt="Mohamed Sayed at workstation">
+                            </div>
+                            <div class="about-experience-pill">
+                                <i class="fa-brands fa-dart-lang"></i>
+                                <span>Clean Architecture</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right: Paragraphs & Stats -->
+                    <div class="about-content reveal-on-scroll reveal-right">
+                        <div class="about-paragraphs" id="about-paragraphs">
+                            <!-- Injected dynamically from js/data.js -->
+                        </div>
+
+                        <!-- 4 Stat Cards -->
+                        <div class="stats-grid" id="about-stats">
+                            <!-- Injected dynamically from js/data.js -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             8. EXPERIENCE SECTION (TIMELINE)
+             (Directly after About — NO Education Section)
+             =============================================== -->
+        <section class="section" id="experience" aria-label="Work Experience">
+            <div class="container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-briefcase"></i> Career Journey</span>
+                    <h2 class="section-title">Experience</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                    <p class="section-subtitle">Track record of building scalable mobile applications and integrating clean architectural patterns.</p>
+                </div>
+
+                <div class="timeline-container" id="experience-timeline">
+                    <!-- Injected dynamically from js/data.js (6 entries) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             9. SKILLS SECTION
+             =============================================== -->
+        <section class="section section-alt" id="skills" aria-label="Technical Skills">
+            <div class="container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-code"></i> Expertise</span>
+                    <h2 class="section-title">Skills</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                    <p class="section-subtitle">Specialized technical stack focused on cross-platform mobile engineering, state management, and cloud architecture.</p>
+                </div>
+
+                <div class="skills-grid" id="skills-grid">
+                    <!-- Injected dynamically from js/data.js (6 categories) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             10. FEATURED PROJECTS SECTION (DEMO PROJECTS)
+             =============================================== -->
+        <section class="section" id="projects" aria-label="Featured Projects">
+            <div class="container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-laptop-code"></i> Portfolio Showcase</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                    <p class="section-subtitle">Curated demonstration mobile applications exhibiting clean UI/UX, BLoC architecture, REST integrations, and custom animations.</p>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    <!-- Injected dynamically from js/data.js (4 demo projects) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             11. TESTIMONIALS SECTION (SLIDER)
+             =============================================== -->
+        <section class="section section-alt" id="testimonials" aria-label="Client &amp; Collaborator Testimonials">
+            <div class="container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-quote-left"></i> Endorsements</span>
+                    <h2 class="section-title">What People Say</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                    <p class="section-subtitle">Feedback and recommendations from project managers and engineers (Demo Showcase).</p>
+                </div>
+
+                <div class="testimonials-wrapper reveal-on-scroll">
+                    <div class="testimonial-slider" tabindex="0" aria-label="Testimonials slider, use arrow keys to navigate">
+                        <div class="testimonial-track" id="testimonial-track">
+                            <!-- Injected dynamically from js/data.js -->
+                        </div>
+                    </div>
+
+                    <!-- Slider Navigation -->
+                    <div class="slider-nav">
+                        <button type="button" class="slider-btn" id="prev-btn" aria-label="Previous testimonial">
+                            <i class="fa-solid fa-chevron-left"></i>
+                        </button>
+                        <div class="slider-dots" id="slider-dots" role="tablist" aria-label="Testimonial slides">
+                            <!-- Injected dynamically -->
+                        </div>
+                        <button type="button" class="slider-btn" id="next-btn" aria-label="Next testimonial">
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             12. SERVICES SECTION (14 SERVICES)
+             =============================================== -->
+        <section class="section" id="services" aria-label="Services Offered">
+            <div class="container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-cubes-stacked"></i> What I Offer</span>
+                    <h2 class="section-title">My Services</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                    <p class="section-subtitle">Comprehensive mobile development solutions tailored for startups, agencies, and enterprise applications.</p>
+                </div>
+
+                <div class="services-grid" id="services-grid">
+                    <!-- Injected dynamically from js/data.js (14 cards) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ===============================================
+             13. GET IN TOUCH / CONTACT SECTION
+             =============================================== -->
+        <section class="section section-alt" id="contact" aria-label="Contact Section">
+            <div class="container contact-container">
+                <div class="section-heading reveal-on-scroll">
+                    <span class="section-label"><i class="fa-solid fa-envelope-open-text"></i> Start A Project</span>
+                    <h2 class="section-title">Get In Touch</h2>
+                    <span class="section-underline" aria-hidden="true"></span>
+                    <p class="section-subtitle">Have a mobile app in mind, need Flutter consultation, or want to discuss a freelance contract? Reach out directly.</p>
+                </div>
+
+                <!-- 2 Primary Direct Contact Cards -->
+                <div class="contact-cards-grid">
+                    <!-- WhatsApp Card -->
+                    <div class="contact-card reveal-on-scroll reveal-left" id="whatsapp-card">
+                        <!-- Injected dynamically from js/data.js -->
+                    </div>
+
+                    <!-- Email Card -->
+                    <div class="contact-card reveal-on-scroll reveal-right" id="email-card">
+                        <!-- Injected dynamically from js/data.js -->
+                    </div>
+                </div>
+
+                <!-- Quick Inquiry Form Card -->
+                <div class="inquiry-form-card reveal-on-scroll">
+                    <h3 class="inquiry-form-title">Send a Direct Inquiry</h3>
+                    <p class="inquiry-form-sub">Drop your project requirements and I will get back to you within 24 hours.</p>
+
+                    <form id="inquiry-form" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="form-name" class="form-label">Your Name *</label>
+                                <input type="text" id="form-name" class="form-input" placeholder="e.g. John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-email" class="form-label">Your Email *</label>
+                                <input type="email" id="form-email" class="form-input" placeholder="e.g. john@example.com" required>
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="form-subject" class="form-label">Subject</label>
+                                <input type="text" id="form-subject" class="form-input" placeholder="e.g. Mobile E-Commerce App Project">
+                            </div>
+                            <div class="form-group full-width">
+                                <label for="form-message" class="form-label">Message *</label>
+                                <textarea id="form-message" class="form-textarea" placeholder="Describe your project, timeline, and goals..." required></textarea>
+                            </div>
+                        </div>
+                        <div class="form-submit-row">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa-solid fa-paper-plane"></i> Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ===============================================
+         14. FOOTER
+         =============================================== -->
+    <footer class="site-footer" id="site-footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <a href="#home" class="site-logo" aria-label="Back to Top">
+                        <span class="logo-badge"><span>M</span>S</span>
+                        <div class="logo-text">
+                            <span class="logo-name">Mohamed</span>
+                            <span class="logo-role">FLUTTER DEV</span>
+                        </div>
+                    </a>
+                    <p class="footer-slogan" id="footer-slogan">Building digital experiences that make a difference.</p>
+                </div>
+
+                <div class="footer-social" id="footer-social-links">
+                    <!-- Injected dynamically from js/data.js -->
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p class="copyright" id="footer-copyright">© 2026 Mohamed Sayed. All rights reserved.</p>
+                <button type="button" class="back-to-top" id="back-to-top" aria-label="Scroll back to top of page">
+                    <span>Back to Top</span> <i class="fa-solid fa-arrow-up"></i>
+                </button>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts (In strict dependency order: Data -> Animations -> Main) -->
+    <script src="js/data.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
